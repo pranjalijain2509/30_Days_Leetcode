@@ -1,0 +1,9 @@
+349. Intersection of Two Arrays
+
+Solution-
+
+class Solution(object):
+    def intersection(self, nums1, nums2):
+        nu={i for i in nums1}
+        nut={j for j in nums2}
+        return(nu.intersection(nut))
