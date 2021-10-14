@@ -1,0 +1,20 @@
+1588. Sum of All Odd Length Subarrays
+
+Solution-
+
+class Solution(object):
+    def sumOddLengthSubarrays(self, arr):
+        ab=[]
+        for i in range(len(arr) + 1):
+            for j in range(i):
+                ab.append(arr[j: i])
+        c=[]
+        for i in ab:
+            if len(i)%2!=0:
+                c.append(i)
+        sum=0
+        for i in c:
+            for j in i:
+                sum=sum+j
+        return(sum)
+        
