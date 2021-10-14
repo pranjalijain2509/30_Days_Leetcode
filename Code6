@@ -1,0 +1,10 @@
+1528. Shuffle String
+
+Solution-
+class Solution(object):
+    def restoreString(self, s, indices):
+        st=""
+        for i in range(len(indices)):
+            st += s[indices.index(i)]
+        return(st)
+            
