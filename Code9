@@ -1,0 +1,12 @@
+2006. Count Number of Pairs With Absolute Difference K
+
+Solution-
+class Solution(object):
+    def countKDifference(self, nums, k):
+        c=0
+        res = [[a,b] for idx, a in enumerate(nums) for b in nums[idx + 1:]]
+        for i,j in res:
+            if i-j==k or j-i==k:
+                c=c+1
+        return(c)
+        
