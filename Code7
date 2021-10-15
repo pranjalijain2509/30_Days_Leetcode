@@ -1,0 +1,12 @@
+1732. Find the Highest Altitude
+
+Solution-
+
+class Solution(object):
+    def largestAltitude(self, gain):
+        tsum=0
+        maxi=0
+        for i in range(0,len(gain)):
+            tsum=tsum+gain[i]
+            maxi=max(tsum,maxi)
+        return maxi
