@@ -1,0 +1,11 @@
+977. Squares of a Sorted Array
+
+Solution-
+class Solution(object):
+    def sortedSquares(self, nums):
+        ou=[]
+        for i in range(len(nums)):
+            c=nums[i]*nums[i]
+            ou.append(c)
+        ou.sort()
+        return(ou)
