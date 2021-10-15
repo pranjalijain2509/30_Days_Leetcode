@@ -1,0 +1,10 @@
+1389. Create Target Array in the Given Order
+
+Solution-
+
+class Solution(object):
+    def createTargetArray(self, nums, index):
+        res=[]
+        for i in range(len(index)):
+            res.insert(index[i],nums[i])
+        return(res)
