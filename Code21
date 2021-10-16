@@ -1,0 +1,19 @@
+989. Add to Array-Form of Integer
+
+Solution-
+
+class Solution(object):
+    def addToArrayForm(self, num, k):
+        st=""
+        for i in num:
+            st=st+str(i)
+        p=int(st)
+
+        c=p+k
+        d=str(c)
+        ab=[]
+        for i in range(len(d)):
+            ab.append(int(d[i]))
+        return(ab)
+
+        
