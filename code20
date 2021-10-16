@@ -1,15 +1,15 @@
-414. Third Maximum Number
+628. Maximum Product of Three Numbers
 
 Solution-
 
 class Solution(object):
-    def thirdMax(self, nums):
-        nu=set(nums)
-        new_num=list(nu)
-        new_num.sort()
-        if len(new_num)<3:
-            return(new_num[-1])
+    def maximumProduct(self, nums):
+        nums.sort()
+        p=nums[-1]*nums[-2]*nums[-3]
+        r=nums[0]*nums[1]*nums[-1]
+        if p>r:
+            return(p)
         else:
-            return(new_num[-3])
+            return(r)
         
         
