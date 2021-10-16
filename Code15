@@ -1,0 +1,15 @@
+1051. Height Checker
+
+Solution-
+
+class Solution(object):
+    def heightChecker(self, heights):
+        expected=heights[:]
+        expected.sort()
+
+        co=0
+        for i, j in zip(heights, expected):
+            if i!=j:
+                co=co+1
+        return(co)
+        
