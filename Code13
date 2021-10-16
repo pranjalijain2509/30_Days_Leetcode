@@ -1,0 +1,13 @@
+1351. Count Negative Numbers in a Sorted Matrix
+
+Solution-
+
+class Solution(object):
+    def countNegatives(self, grid):
+        c=0
+        for i in grid:
+            for j in i:
+                if j<0:
+                    c=c+1
+        return(c)
+        
