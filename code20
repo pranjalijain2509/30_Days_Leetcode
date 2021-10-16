@@ -1,0 +1,15 @@
+414. Third Maximum Number
+
+Solution-
+
+class Solution(object):
+    def thirdMax(self, nums):
+        nu=set(nums)
+        new_num=list(nu)
+        new_num.sort()
+        if len(new_num)<3:
+            return(new_num[-1])
+        else:
+            return(new_num[-3])
+        
+        
