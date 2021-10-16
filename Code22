@@ -1,0 +1,32 @@
+860. Lemonade Change
+
+Solution-
+
+class Solution(object):
+    def lemonadeChange(self, bills):
+        co=0
+        cou=0
+        for i in bills:
+            if i==5:
+                co=co+1
+            elif i==10:
+                
+                if co>=1:
+                    co=co-1
+                    cou=cou+1
+                    
+                   
+                else:
+                    return False
+            else:
+               
+                if co>=1 and cou>=1:
+                    co=co-1
+                    cou=cou-1
+                    
+                elif co>=3 :
+                    co=co-3
+                else:
+                    return False
+        return True
+                
