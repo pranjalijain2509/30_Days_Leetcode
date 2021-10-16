@@ -1,0 +1,19 @@
+1748. Sum of Unique Elements
+
+Solution-
+
+class Solution(object):
+    def sumOfUnique(self, nums):
+        freq={}
+        for i in nums:
+            if i in freq:
+                freq[i]+=1
+            else:
+                freq[i]=1
+        nums = [1,1,1,1,1]
+        sum=0
+        for i,j in freq.items():
+            if j==1:
+                sum=sum+i
+        return(sum)
+        
