@@ -1,0 +1,10 @@
+852. Peak Index in a Mountain Array
+
+Solution-
+
+class Solution(object):
+    def peakIndexInMountainArray(self, arr):
+         for i in xrange(len(arr)):
+            if arr[i] > arr[i+1]:
+                return i
+        
