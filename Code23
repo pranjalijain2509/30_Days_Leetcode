@@ -1,0 +1,14 @@
+1979. Find Greatest Common Divisor of Array
+
+Solution-
+
+
+import math
+class Solution:
+    def findGCD(self, nums):
+        nums.sort()
+        x=nums[0]
+        y=nums[-1]
+        while y != 0:
+            (x, y) = (y, x % y)
+        return x
