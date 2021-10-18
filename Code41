@@ -1,0 +1,14 @@
+1636. Sort Array by Increasing Frequency
+
+Solution-
+
+class Solution(object):
+    def frequencySort(self, nums):
+        freq={}
+        for i in nums:
+            if i in freq:
+                freq[i]+=1
+            else:
+                freq[i]=1
+        return(sorted(nums,key=lambda x:(freq[x],-x)))
+        
