@@ -1,0 +1,18 @@
+1342. Number of Steps to Reduce a Number to Zero
+
+Solution-
+
+class Solution(object):
+    def numberOfSteps(self, num):
+        st=0
+        res=num
+        while(res!=0):
+            if res%2==0:
+                res=res/2
+                st=st+1
+            else:
+                res=res-1
+                st=st+1
+        return(st)
+            
+        
