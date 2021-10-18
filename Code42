@@ -1,0 +1,16 @@
+66. Plus One
+
+Solution-
+
+class Solution(object):
+    def plusOne(self, digits):
+        st=""
+        ts=""
+        for i in digits:
+            st=st+str(i)
+            s=int(st)+1
+            ts=str(s)
+        ab=[]
+        for i in ts:
+            ab.append(int(i))
+        return(ab)
