@@ -1,0 +1,8 @@
+1323. Maximum 69 Number
+
+Solution-
+
+class Solution(object):
+    def maximum69Number (self, num):
+         return str(num).replace('6', '9', 1)
+        
