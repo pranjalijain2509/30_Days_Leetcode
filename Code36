@@ -1,0 +1,16 @@
+1822. Sign of the Product of an Array
+
+Solution-
+
+class Solution(object):
+    def arraySign(self, nums):
+        pr=1
+        for i in nums:
+            pr=pr*i
+        if pr>0:
+            return(1)
+        elif pr==0:
+            return(0)
+        else:
+            return(-1)
+        
