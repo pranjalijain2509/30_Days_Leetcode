@@ -1,0 +1,16 @@
+258. Add Digits
+
+Solution-
+
+class Solution(object):
+    def addDigits(self, num):
+        digi = 0
+        while num > 0:
+            digi += num % 10
+            num = num // 10
+            
+            if num == 0 and digi > 9:
+                num = digi
+                digi = 0
+                
+        return digi
