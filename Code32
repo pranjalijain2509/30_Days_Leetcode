@@ -1,0 +1,26 @@
+1688. Count of Matches in Tournament
+
+Solution-
+
+class Solution(object):
+    def numberOfMatches(self, n):
+        res=n
+        match=0
+        adv=0
+        mat=[]
+        while res!=1:
+            if res%2==0:
+                match=res//2
+                adv=res//2
+                mat.append(match)
+                res=adv
+            else:
+                match=((res-1)//2)
+                adv=((res-1)//2)+1
+                mat.append(match)
+                res=adv
+        sum=0
+        for i in mat:
+            sum=sum+i
+        return(sum)
+        
