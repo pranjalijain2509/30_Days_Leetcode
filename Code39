@@ -1,0 +1,17 @@
+1710. Maximum Units on a Truck
+
+Solution-
+
+class Solution(object):
+    def maximumUnits(self, boxTypes, truckSize):
+        boxTypes.sort(key = lambda x: x[1], reverse=True)
+        space_left=truckSize
+        total_unit=0
+        for i in boxTypes:
+            cost,unit=i
+            cost=min(cost,space_left)
+            total_unit+=cost*unit
+            space_left-=cost
+            if space_left==0:
+                break
+        return(total_unit)
