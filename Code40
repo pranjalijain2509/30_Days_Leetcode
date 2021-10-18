@@ -1,0 +1,16 @@
+922. Sort Array By Parity II
+
+Solution-
+
+class Solution(object):
+    def sortArrayByParityII(self, nums):
+        ab=[]
+        bc=[]
+        cd=[]
+        for i in nums:
+            if i%2==0:
+                ab.append(i)
+            else:
+                bc.append(i)
+        return( [sub[item] for item in range(len(bc)) for sub in [ab, bc]])
+        
