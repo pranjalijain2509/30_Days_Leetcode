@@ -1,0 +1,23 @@
+561. Array Partition I
+
+Solution-
+
+class Solution(object):
+    def arrayPairSum(self, nums):
+        nums.sort();
+        f=[]
+        for i in range(len(nums)-2,-1,-2):
+            f.append(nums[i])
+        sum=0
+        for i in f:
+            sum=sum+i
+        return(sum)
+        
+            
+            
+        
+        
+        
+        
+    
+        
