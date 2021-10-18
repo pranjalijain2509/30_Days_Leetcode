@@ -1,0 +1,17 @@
+1486. XOR Operation in an Array
+
+Solution-
+
+class Solution(object):
+    def xorOperation(self, n, start):
+        result = []*n
+        xORsum = 0
+        
+        for i in range(0,n):
+            result.append(start + 2 * i)
+      
+        for x in result:
+            xORsum = xORsum ^ x
+            
+        return xORsum
+        
