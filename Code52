@@ -1,0 +1,7 @@
+709. To Lower Case
+
+Solution-
+
+class Solution(object):
+    def toLowerCase(self, s):
+        return(s.lower())
