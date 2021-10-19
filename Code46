@@ -1,0 +1,21 @@
+1403. Minimum Subsequence in Non-Increasing Order
+
+Solution-
+
+class Solution(object):
+    def minSubsequence(self, nums):
+        if len(nums)==1:
+            return(nums)
+        nums = sorted(nums, reverse=True)
+        total=0
+        for i in nums:
+            total=total+i
+        subtotal = 0
+        for i in range(len(nums)):
+            subtotal+=nums[i]
+            total-=nums[i]
+            if subtotal>total:
+                return(nums[:i+1])
+                break
+
+        
