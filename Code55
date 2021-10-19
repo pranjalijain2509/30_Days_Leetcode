@@ -1,0 +1,17 @@
+1768. Merge Strings Alternately
+
+Solution-
+
+class Solution(object):
+    def mergeAlternately(self, word1, word2):
+        st=""
+        n=max(len(word1),len(word2))
+        for i in range(n):
+            if len(word1)>i:
+                st+=word1[i]
+            if len(word2)>i:
+                st+=word2[i]
+        return(st)
+                
+        
+        
