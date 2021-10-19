@@ -1,0 +1,15 @@
+1108. Defanging an IP Address
+
+Solution-
+
+class Solution(object):
+    def defangIPaddr(self, address):
+        st=""
+        for i in address:
+            if i==".":
+                st+="[.]"
+            else:
+                st+=i
+        return(st)
+        
+        
