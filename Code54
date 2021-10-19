@@ -1,0 +1,11 @@
+344. Reverse String
+
+Solution-
+
+class Solution(object):
+    def reverseString(self, s):
+        size = len(s)
+        for i in range(size//2):
+            s[i], s[-i-1] = s[-i-1], s[i]
+        return(s)
+        
