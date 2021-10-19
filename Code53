@@ -1,0 +1,19 @@
+1832. Check if the Sentence Is Pangram
+
+Solution-
+
+class Solution(object):
+    def checkIfPangram(self, sentence):
+        st=list(sentence)
+        y=list(st)
+        y.sort()
+        r=set(y)
+        co=0
+        for i in r:
+            co=co+1
+        if co==26:
+            return True
+        else:
+            return False
+    
+        
