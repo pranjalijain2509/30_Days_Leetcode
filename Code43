@@ -1,0 +1,8 @@
+908. Smallest Range I
+
+Solution-
+
+class Solution(object):
+    def smallestRangeI(self, nums, k):
+        return(max(max(nums)-min(nums)-2*k,0))
+        
