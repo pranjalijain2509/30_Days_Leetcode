@@ -1,0 +1,15 @@
+1816. Truncate Sentence
+
+Solution-
+
+class Solution(object):
+    def truncateSentence(self, s, k):
+        sw=s.split(" ")
+        se=[]
+        for i in range(k):
+            se.append(sw[i])
+        po=""
+        for i in range(len(se)-1):
+            po+=se[i]+" "
+        return(po+se[-1])
+        
