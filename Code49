@@ -1,0 +1,15 @@
+771. Jewels and Stones
+
+Solution-
+
+class Solution(object):
+    def numJewelsInStones(self, jewels, stones):
+        ja=list(jewels)
+        jb=list(stones)
+        c=0
+        for i in ja:
+            for j in jb:
+                if i==j:
+                    c=c+1
+        return (c)
+        
