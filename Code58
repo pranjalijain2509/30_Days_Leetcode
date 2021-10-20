@@ -1,0 +1,23 @@
+451. Sort Characters By Frequency
+
+Solution-
+
+class Solution(object):
+    def frequencySort(self, s):
+        freq={}
+        l=[]
+        st=""
+        for i in s:
+            if i in freq:
+                freq[i]+=1
+            else:
+                freq[i]=1
+        dictt =  sorted(freq.items(),key=lambda i: i[1],reverse=True)
+        for i,j in dictt:
+            c=i*j
+            l.append(c)
+        for k in l:
+            st+=k
+        return(st)
+        
+        
