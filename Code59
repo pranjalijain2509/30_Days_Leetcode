@@ -1,0 +1,21 @@
+1394. Find Lucky Integer in an Array
+
+Solution-
+
+class Solution(object):
+    def findLucky(self, arr):
+        freq={}
+        for i in arr:
+            if i in freq:
+                freq[i]+=1
+            else:
+                freq[i]=1
+        ab=[]
+        for i,j in freq.items():
+            if i==j:
+                ab.append(i)
+        if len(ab)>=1:
+            return(ab[-1])
+        else:
+            return(-1)
+        
