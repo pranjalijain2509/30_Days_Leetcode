@@ -1,0 +1,16 @@
+2037. Minimum Number of Moves to Seat Everyone
+
+Solution-
+
+class Solution(object):
+    def minMovesToSeat(self, seats, students):
+        seats.sort()
+        students.sort()
+        ab=[]
+        for i,j in zip(seats,students):
+            c=abs(i-j)
+            ab.append(c)
+        sum=0
+        for i in ab:
+            sum=sum+i
+        return(sum)
