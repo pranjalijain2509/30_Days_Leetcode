@@ -1,0 +1,24 @@
+1704. Determine if String Halves Are Alike
+
+Solution-
+
+class Solution(object):
+    def halvesAreAlike(self, s):
+        les=len(s)
+        co=0
+        po=0
+        coo=0
+        poo=0
+        for i in range(0,les//2):
+            if s[i]=='a' or s[i]=='e' or s[i]=='o' or s[i]=='u' or s[i]=='i' or s[i]=='A' or s[i]=='E' or s[i]=='O' or s[i]=='U' or s[i]=='I':
+                co=co+1
+        po=(les//2)-co
+        for j in range((les//2),les):
+            if s[j]=='a' or s[j]=='e' or s[j]=='o' or s[j]=='u' or s[j]=='i' or s[j]=='A' or s[j]=='E' or s[j]=='O' or s[j]=='U' or s[j]=='I':
+                coo=coo+1
+        poo=(les//2)-coo
+        if co==coo and po==poo:
+            return True
+        else:
+            return False
+        
