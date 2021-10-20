@@ -1,0 +1,27 @@
+1941. Check if All Characters Have Equal Number of Occurrences
+
+Solution-
+
+class Solution(object):
+    def areOccurrencesEqual(self, s):
+        freq={}
+        for i in s:
+            if i in freq:
+                freq[i]+=1
+            else:
+                freq[i]=1
+        f=len(freq)
+        ab=[]
+        for i,j in freq.items():
+            ab.append(j)
+        c=ab[0]
+        count=0
+        for i in range(1,len(ab)):
+            if c==ab[i]:
+                count+=1
+        if f==count+1:
+            return True
+        else:
+            return False
+
+        
