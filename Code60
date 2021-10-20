@@ -1,0 +1,20 @@
+1876. Substrings of Size Three with Distinct Characters
+
+Solution-
+
+class Solution(object):
+    def countGoodSubstrings(self, s):
+        ab=[]
+        bc=[]
+        co=0
+        for i in range(len(s)):
+            for j in range(i+1,len(s)+1):
+                if len(s[i:j])==3:
+                    ab.append(s[i:j])
+        for i in ab:
+            d=set(i)
+            bc.append(list(d))
+        for i in bc:
+            if len(i)==3:
+                co=co+1
+        return(co)
