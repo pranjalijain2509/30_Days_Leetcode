@@ -1,0 +1,18 @@
+804. Unique Morse Code Words
+
+Solution-
+
+class Solution(object):
+    def uniqueMorseRepresentations(self, words):
+        a=[".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
+        st=""
+        ab=[]
+        for i in words:
+            for j in i:
+                c=ord(j)-97
+                st+=a[c]
+            ab.append(st)
+            st=""
+        k=set(ab)
+        return(len(k))
+        
