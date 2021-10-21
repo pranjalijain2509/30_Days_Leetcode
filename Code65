@@ -1,0 +1,12 @@
+1450. Number of Students Doing Homework at a Given Time
+
+Solution-
+
+class Solution(object):
+    def busyStudent(self, startTime, endTime, queryTime):
+        co=0
+        for i,j in zip(startTime,endTime):
+            if i<=queryTime<=j:
+                co=co+1
+        return(co)
+        
