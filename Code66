@@ -1,0 +1,16 @@
+1827. Minimum Operations to Make the Array Increasing
+
+Solution-
+
+class Solution(object):
+    def minOperations(self, nums):
+        if len(nums)==1:
+            return(0)
+        count=0
+        for i in range(1,len(nums)):
+            if not(nums[i]>nums[i-1]):
+                dif=(nums[i-1]-nums[i])+1
+                count+=dif
+                nums[i]=dif+nums[i]
+        return(count)
+        
