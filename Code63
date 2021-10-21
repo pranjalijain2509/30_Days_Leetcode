@@ -1,0 +1,13 @@
+70. Climbing Stairs
+
+Solution-
+
+memo=[0,1,2]
+class Solution(object):
+    def climbStairs(self, n):
+       
+        try:
+            memo[n]
+        except:
+            memo.append(self.climbStairs(n - 1) + self.climbStairs(n - 2))
+        return memo[n]
