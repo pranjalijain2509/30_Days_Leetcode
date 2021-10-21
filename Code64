@@ -1,0 +1,19 @@
+1295. Find Numbers with Even Number of Digits
+
+Solution-
+
+class Solution(object):
+    def findNumbers(self, nums):
+        ab=[]
+        for i in nums:
+            c=str(i)
+            d=len(c)
+            ab.append(d)
+        cd=[]
+        for i in ab:
+            if i%2==0:
+                cd.append(i)
+        return(len(cd))
+        
+        
+        
