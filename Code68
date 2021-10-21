@@ -1,0 +1,20 @@
+1725. Number Of Rectangles That Can Form The Largest Square
+
+Solution-
+
+class Solution(object):
+    def countGoodRectangles(self, rectangles):
+        ab=[]
+        cou=0
+        for i in rectangles:
+            d=min(i)
+            ab.append(d)
+        c=max(ab)
+        for i in ab:
+            if i==c:
+                cou+=1
+        return(cou)
+        
+    
+        
+        
