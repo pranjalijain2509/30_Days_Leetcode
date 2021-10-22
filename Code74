@@ -1,0 +1,14 @@
+1122. Relative Sort Array
+
+Solution-
+
+class Solution(object):
+    def relativeSortArray(self, arr1, arr2):
+        ab=[]
+        for i in arr2:
+            for j in arr1:
+                if i==j:
+                    ab.append(i)
+        main_list = [item for item in arr1 if item not in ab]
+        main_list.sort()
+        return(ab+main_list)
