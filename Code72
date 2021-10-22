@@ -1,0 +1,15 @@
+1217. Minimum Cost to Move Chips to The Same Position
+
+Solution-
+
+class Solution(object):
+    def minCostToMoveChips(self, position):
+        even_co=0
+        odd_co=0
+        for i in position:
+            if i%2==0:
+                even_co+=1
+            else:
+                odd_co+=1
+        return(min(even_co,odd_co))
+    
