@@ -1,0 +1,16 @@
+1572. Matrix Diagonal Sum
+
+Solution-
+
+class Solution(object):
+    def diagonalSum(self, mat):
+        s1,s2=0,0
+        for i in range(0,len(mat)):
+            for j in range(0,len(mat)):
+                if i==j:
+                    s1+=mat[i][j]
+                if (len(mat)-1==i+j) and (i!=j):
+                    s2+=mat[i][j]
+        return s1+s2;
+
+        
