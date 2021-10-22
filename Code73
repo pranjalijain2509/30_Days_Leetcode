@@ -1,0 +1,13 @@
+242. Valid Anagram
+
+Solution-
+
+class Solution(object):
+    def isAnagram(self, s, t):
+        k=sorted(s)
+        p=sorted(t)
+        if k==p:
+            return True
+        else:
+            return False
+        
