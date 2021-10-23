@@ -1,0 +1,8 @@
+1460. Make Two Arrays Equal by Reversing Sub-arrays
+
+Solution-
+
+class Solution(object):
+    def canBeEqual(self, target, arr):
+        return True if Counter(target) == Counter(arr) else False
+        
