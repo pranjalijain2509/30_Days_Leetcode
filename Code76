@@ -1,0 +1,18 @@
+747. Largest Number At Least Twice of Others
+
+Solution-
+
+class Solution(object):
+    def dominantIndex(self, nums):
+        n=max(nums)
+        j=nums.index(n)
+        nums.remove(n)
+        count=0
+        for i in nums:
+            if n>=i*2:
+                count+=1
+        if count==len(nums):
+            return(j)
+        else:
+            return(-1)
+        
