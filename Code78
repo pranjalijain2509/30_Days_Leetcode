@@ -1,0 +1,17 @@
+389. Find the Difference
+
+Solution-
+
+class Solution(object):
+    def findTheDifference(self, s, t):
+        sum=0
+        sum1=0
+        for i in s:
+            d=ord(i)
+            sum+=d
+        for j in t:
+            e=ord(j)
+            sum1+=e
+        g=sum1-sum
+        return(chr(g))
+        
