@@ -1,0 +1,16 @@
+1374. Generate a String With Characters That Have Odd Counts
+
+Solution-
+
+class Solution(object):
+    def generateTheString(self, n):
+        a="p"
+        b="z"
+        s=""
+        if n%2==0:
+            s=s+a*(n-1)+b
+        else:
+            s=s+a*n
+        return(s)
+    
+        
