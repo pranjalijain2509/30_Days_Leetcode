@@ -1,0 +1,24 @@
+2042. Check if Numbers Are Ascending in a Sentence
+
+Solution-
+
+class Solution(object):
+    def areNumbersAscending(self, s):
+        l=s.split()
+        p=[]
+        for i in range(len(l)):
+            if l[i].isdigit():
+                p.append(int(l[i]))
+        k=[]
+        t=[]
+        for i in range(len(p)-1):
+            if p[i+1]>p[i]:
+                k.append('true')
+            else:
+                t.append('false')
+        if len(t)>=1:
+            return False
+        else:
+            return True
+    
+        
