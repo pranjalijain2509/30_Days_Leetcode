@@ -1,0 +1,12 @@
+350. Intersection of Two Arrays II
+
+Solution-
+
+class Solution(object):
+    def intersect(self, nums1, nums2):
+        ans=[]
+        for i in nums1:
+            if i in nums2:
+                nums2.remove(i)
+                ans.append(i)
+        return(ans)
