@@ -1,0 +1,12 @@
+283. Move Zeroes
+
+
+Solution-
+
+class Solution(object):
+    def moveZeroes(self, nums):
+        for i in nums:
+            if i==0:
+                nums.append(i)
+                nums.remove(i)
+        return(nums)
