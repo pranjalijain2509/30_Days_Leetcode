@@ -1,0 +1,10 @@
+69. Sqrt(x)
+
+Solution-
+
+from math import sqrt 
+class Solution(object):
+    def mySqrt(self, x):
+        k=sqrt(x)
+        g=int(k)
+        return(g)
