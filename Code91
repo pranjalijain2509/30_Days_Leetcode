@@ -1,0 +1,19 @@
+485. Max Consecutive Ones
+
+Solution-
+
+class Solution(object):
+    def findMaxConsecutiveOnes(self, nums):
+        for i in range(len(nums)):
+            if nums[i]==0:
+                nums[i]="-"
+        st=""
+        for i in nums:
+            st+=str(i)
+        k=st.split('-')
+        cd=[]
+        for i in k:
+            s=len(i)
+            cd.append(s)
+        return(max(cd))
+        
