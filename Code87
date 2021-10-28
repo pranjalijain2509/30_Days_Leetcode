@@ -1,0 +1,10 @@
+58. Length of Last Word
+
+Solution-
+
+class Solution(object):
+    def lengthOfLastWord(self, s):
+        k=s.split()
+        v=k[-1]
+        return(len(v))
+        
