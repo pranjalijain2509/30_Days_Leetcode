@@ -1,0 +1,9 @@
+67. Add Binary
+
+Solution-
+
+class Solution(object):
+    def addBinary(self, a, b):
+        z=bin(int('0b'+a,2)+int('0b'+b,2))
+        return(z[2:])
+        
