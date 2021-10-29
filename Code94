@@ -1,0 +1,19 @@
+500. Keyboard Row
+
+Solution-
+
+class Solution(object):
+    def findWords(self, words):
+        row1 = {'q','w','e','r','t','y','u','i','o','p'}
+        row2 = {'a','s','d','f','g','h','j','k','l'}
+        row3 = {'z','x','c','v','b','n','m'}
+        common = []
+        for word in words:
+            string = set(word.lower())
+            intersection1 = row1 & string
+            intersection2 = row2 & string
+            intersection3 = row3 & string
+            if len(intersection1) == len(string) or len(intersection2) == len(string) or len(intersection3) == len(string):
+                common.append(word)
+        return common
+        
