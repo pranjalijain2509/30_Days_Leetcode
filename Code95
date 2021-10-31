@@ -1,0 +1,8 @@
+1356. Sort Integers by The Number of 1 Bits
+
+Solution-
+
+class Solution(object):
+    def sortByBits(self, arr):
+        arr.sort()
+        return sorted(arr, key = lambda x:bin(x).count('1'))
