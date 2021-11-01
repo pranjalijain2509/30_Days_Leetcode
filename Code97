@@ -1,0 +1,19 @@
+28. Implement strStr()
+
+Solution-
+
+class Solution(object):
+    def strStr(self, haystack, needle):
+        haystack_len = len(haystack)
+        needle_len = len(needle)
+
+        if needle == '':
+            return 0
+        
+
+        for i in range(haystack_len - needle_len + 1):
+            if haystack[i:i+len(needle)] == needle:
+                return i
+            
+        return -1
+        
