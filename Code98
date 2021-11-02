@@ -1,0 +1,15 @@
+2000. Reverse Prefix of Word
+
+Solution-
+
+class Solution(object):
+    def reversePrefix(self, word, ch):
+        if ch not in word:
+            return word
+    
+        chindex=word.index(ch)
+    
+        ans=word[:chindex+1][::-1]+word[chindex+1:]
+    
+        return ans
+        
