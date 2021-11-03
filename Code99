@@ -1,0 +1,8 @@
+1812. Determine Color of a Chessboard Square
+
+Solution-
+
+class Solution(object):
+    def squareIsWhite(self, coordinates):
+        return True if (ord(coordinates[0])-96 + int(coordinates[1]))%2!=0 else False
+        
