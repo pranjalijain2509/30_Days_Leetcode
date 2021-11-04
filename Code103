@@ -1,0 +1,17 @@
+1945. Sum of Digits of String After Convert
+
+Solution-
+
+class Solution(object):
+    def getLucky(self, s, k):
+        t=""
+        sum=0
+        for i in s:
+            t=t+str((ord(i)-96))
+        for i in range(0,k):
+            for j in t:
+                sum+=int(j)
+            t=str(sum)
+            sum=0
+        return(t)
+        
