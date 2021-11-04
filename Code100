@@ -1,0 +1,12 @@
+2053. Kth Distinct String in an Array
+
+Solution-
+
+class Solution(object):
+    def kthDistinct(self, arr, k):
+        freq = Counter(arr)
+        for x in arr: 
+            if freq[x] == 1: k -= 1
+            if k == 0: return x
+        return ""
+        
