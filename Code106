@@ -1,0 +1,20 @@
+2032. Two Out of Three
+
+Solution-
+
+class Solution(object):
+    def twoOutOfThree(self, nums1, nums2, nums3):
+        r=[]
+        a=set(nums1)
+        b=set(nums2)
+        c=set(nums3)
+        f=a.intersection(b,c)
+        d=a.intersection(b)
+        e=b.intersection(c)
+        g=c.intersection(a)
+        r+=f
+        r+=d
+        r+=e
+        r+=g
+        return(list(set(r)))
+        
