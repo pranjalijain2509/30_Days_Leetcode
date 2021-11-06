@@ -1,0 +1,9 @@
+46. Permutations
+
+Solution-
+
+from itertools import permutations
+class Solution(object):
+    def permute(self, nums):
+        l = list(permutations(nums))
+        return(l)
