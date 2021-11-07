@@ -1,0 +1,9 @@
+347. Top K Frequent Elements
+
+Solution-
+
+
+class Solution:
+    def topKFrequent(self, nums, k):
+        return dict(Counter(nums).most_common(k)).keys()
+      
