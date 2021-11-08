@@ -1,0 +1,17 @@
+1796. Second Largest Digit in a String
+
+Solution-
+
+class Solution(object):
+    def secondHighest(self, s):
+        f=[]
+        for i in s:
+            if i>='0' and i<='9':
+                f.append(i)
+        x=set(f)
+        y=list(x)
+        y.sort()
+        if len(y)>=2:
+            return(y[-2])
+        else:
+            return(-1)
