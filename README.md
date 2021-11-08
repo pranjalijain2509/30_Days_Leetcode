@@ -1,2 +1,2 @@
 # 30_Days_Leetcode
-Python code
+Standard Python code
