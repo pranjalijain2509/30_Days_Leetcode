@@ -1,0 +1,12 @@
+557. Reverse Words in a String III
+
+Solution-
+
+class Solution(object):
+    def reverseWords(self, s):
+        k=s.split()
+        fr=[]
+        for i in k:
+            fr.append(i[::-1])
+        return(' '.join(fr))
+        
