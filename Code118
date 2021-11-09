@@ -1,0 +1,18 @@
+392. Is Subsequence
+
+Solution-
+
+class Solution(object):
+    def isSubsequence(self, s, t):
+        j = 0
+        c = 0 
+        if len(s) == 0:
+            return True
+        for i in range(len(t)):
+            if t[i] == s[j]:
+                j += 1
+                c += 1
+            if c == len(s): 
+                return True
+        return False
+        
