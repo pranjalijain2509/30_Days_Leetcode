@@ -1,0 +1,16 @@
+1385. Find the Distance Value Between Two Arrays
+
+Solution-
+
+class Solution(object):
+    def findTheDistanceValue(self, arr1, arr2, d):
+        res = len(arr1)
+        for i in arr1:
+            for j in arr2:
+                if(abs(i-j)>d):
+                    continue
+                else:
+                    res-=1
+                    break
+        return res
+        
