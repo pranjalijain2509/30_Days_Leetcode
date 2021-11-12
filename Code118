@@ -12,7 +12,7 @@ class Solution(object):
             if t[i] == s[j]:
                 j += 1
                 c += 1
-            if c == len(s): 
+            if c==len(s): 
                 return True
         return False
         
