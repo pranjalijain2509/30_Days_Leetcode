@@ -9,5 +9,5 @@ class Solution(object):
         for i in s:
             if s.count(i)==1:
                 res.append(i)
-        return(res)
+        return(res))
                 
