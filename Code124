@@ -1,0 +1,10 @@
+ BLITZ3_2
+ 
+ Solution-
+ 
+t=int(input())
+for i in range(t):
+       a,b,c = list(map(int,input().split()))
+       s=2*(180+a)
+       p=b+c
+       print(s-p)
