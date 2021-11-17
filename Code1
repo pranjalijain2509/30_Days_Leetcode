@@ -1,7 +1,6 @@
 1773. Count Items Matching a Rule
 
 solution-
-
 class Solution(object):
     def countMatches(self, items, ruleKey, ruleValue):
         c=0
