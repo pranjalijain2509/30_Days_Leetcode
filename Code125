@@ -1,0 +1,12 @@
+TEST
+
+Solution-
+
+while True:
+       k=int(input())
+       if k==42:
+              break
+       else:
+              print(k)
+              
+              
