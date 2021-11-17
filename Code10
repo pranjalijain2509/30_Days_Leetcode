@@ -1,6 +1,7 @@
 977. Squares of a Sorted Array
 
 Solution-
+
 class Solution(object):
     def sortedSquares(self, nums):
         ou=[]
