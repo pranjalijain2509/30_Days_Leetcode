@@ -1,7 +1,6 @@
 414. Third Maximum Number
 
 Solution-
-
 class Solution(object):
     def thirdMax(self, nums):
         nu=set(nums)
