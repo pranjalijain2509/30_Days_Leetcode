@@ -1,7 +1,5 @@
 884. Uncommon Words from Two Sentences
-
 Solution-
-
 class Solution(object):
     def uncommonFromSentences(self, s1, s2):
         s=s1.split()+s2.split()
